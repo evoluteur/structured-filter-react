@@ -1,0 +1,19 @@
+node_modules
+
+public/bundle.js
+
+*-nogit/
+*-nogit.*
+
+*.zip
+
+
+# Windows stuff
+Thumbs.db
+Desktop.ini
+
+# Mac stuff
+.DS_Store
+
+# WebStorm stuff
+.idea

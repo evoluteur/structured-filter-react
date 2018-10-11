@@ -1,0 +1,50 @@
+
+.fltr-pills > div {
+	cursor: pointer;
+	display: inline-block;
+	border: solid 1px #ccc;
+	border-radius: 20px;
+	width: auto;
+	padding: 5px 10px;
+	margin: 5px;
+}
+.fltr-pills > div:hover {
+	background-color: #eee;
+}
+.active-pill{
+	background-color: #eee;
+}
+.cond{
+	padding-left: 5px;
+}
+.fltr-cond{
+	margin-top: 10px;
+}
+.cond > div{
+	margin-right: 10px;
+}
+.pill-del{
+	cursor: pointer;
+	padding: 0 0 0 10px;
+}
+.pill-del:hover{
+	font-weight: bold;
+}
+
+.pill-text > span, 
+.pill-del{
+    display: inline-block;
+	overflow: hidden;
+}
+.pill-value{
+	max-width: 170px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pill-field, 
+.pill-value{
+	font-weight: bold;
+}
+.pill-operator{
+	margin: 0 0.4em;
+}
