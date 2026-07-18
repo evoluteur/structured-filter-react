@@ -1,5 +1,8 @@
 node_modules
 
+dist
+*.tsbuildinfo
+
 public/bundle.js
 
 *-nogit/
