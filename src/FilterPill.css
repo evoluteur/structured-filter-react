@@ -1,17 +1,18 @@
 .fltr-pills > div {
   cursor: pointer;
   display: inline-block;
-  border: solid 1px #ccc;
+  border: solid 1px var(--sfr-border-color);
   border-radius: 20px;
   width: auto;
   padding: 5px 10px;
   margin: 5px;
+  color: var(--sfr-text-color);
 }
 .fltr-pills > div:hover {
-  background-color: #eee;
+  background-color: var(--sfr-hover-bg);
 }
 .active-pill {
-  background-color: #eee;
+  background-color: var(--sfr-active-bg);
 }
 .cond {
   padding-left: 5px;

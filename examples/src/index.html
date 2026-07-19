@@ -1,5 +1,17 @@
 <html>
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-063933E3C2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-063933E3C2");
+    </script>
     <title>Structured-Filter-React</title>
     <meta charset="utf-8" />
     <meta
@@ -16,6 +28,19 @@
       name="keywords"
       content="React component metadata advanced structured filter query builder editor search form"
     />
+    <!-- Inlined to avoid a flash of the wrong theme on load -->
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var theme = localStorage.getItem("theme");
+        if (
+          theme === "dark" ||
+          (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          root.classList.add("theme-dark");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div class="github">
@@ -27,6 +52,7 @@
         height="30px"
       ></iframe>
     </div>
+    <div id="theme-toggle"></div>
     <h1>Structured-Filter-React</h1>
     <p>
       Structured-Filter-React is a React component for building structured
@@ -43,7 +69,8 @@
       <br /><br />
       Code at
       <a href="https://github.com/evoluteur/structured-filter-react">GitHub</a>
-      - &#169; 2026 <a href="https://evoluteur.github.io/">Olivier Giulieri</a>
+      with MIT license - &#169; 2026
+      <a href="https://evoluteur.github.io/">Olivier Giulieri</a>
     </p>
   </body>
 </html>

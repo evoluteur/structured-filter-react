@@ -39,7 +39,9 @@ function fieldsHash(fields: Field[]): Record<string, Field> {
 }
 
 export interface FilterProps {
+  /** The list of fields available to build search conditions from. */
   fields: Field[];
+  /** Called whenever the list of conditions changes (a condition is added, edited, or removed). */
   onChange?: (conditions: Condition[]) => void;
 }
 

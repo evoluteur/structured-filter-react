@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createRoot } from "react-dom/client";
 import Filter from "../../src";
 import type { Condition, Field } from "../../src";
+import ThemeToggle from "./ThemeToggle";
 
 import "./demo.css";
 
@@ -39,4 +40,9 @@ const App = () => {
 const container = document.getElementById("root");
 if (container) {
   createRoot(container).render(<App />);
+}
+
+const themeToggleContainer = document.getElementById("theme-toggle");
+if (themeToggleContainer) {
+  createRoot(themeToggleContainer).render(<ThemeToggle />);
 }

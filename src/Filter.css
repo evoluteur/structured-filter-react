@@ -1,5 +1,31 @@
 /* Structured-Filter-React */
 
+:root {
+  --sfr-bg: #fff;
+  --sfr-text-color: #333;
+  --sfr-border-color: #ccc;
+  --sfr-hover-bg: #eee;
+  --sfr-active-bg: #eee;
+  --sfr-primary-bg: #337ab7;
+  --sfr-primary-border: #2e6da4;
+  --sfr-primary-text: #fff;
+  --sfr-btn-default-bg: #fff;
+  --sfr-btn-default-text: #333;
+}
+
+:root.theme-dark {
+  --sfr-bg: #2a2a2a;
+  --sfr-text-color: #eee;
+  --sfr-border-color: #555;
+  --sfr-hover-bg: #3a3a3a;
+  --sfr-active-bg: #3a3a3a;
+  --sfr-primary-bg: #2b6cb0;
+  --sfr-primary-border: #24557f;
+  --sfr-primary-text: #fff;
+  --sfr-btn-default-bg: #333;
+  --sfr-btn-default-text: #eee;
+}
+
 .evo-filter .form-control,
 .evo-filter .evol-fld > div {
   display: inline-block;
@@ -16,14 +42,22 @@
   padding: 6px 12px;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(204, 204, 204);
+  border-color: var(--sfr-border-color);
   border-radius: 4px;
+  background-color: var(--sfr-bg);
+  color: var(--sfr-text-color);
 }
 
 .btn-primary {
-  color: rgb(255, 255, 255);
-  background-color: rgb(51, 122, 183);
-  border-color: rgb(46, 109, 164);
+  color: var(--sfr-primary-text);
+  background-color: var(--sfr-primary-bg);
+  border-color: var(--sfr-primary-border);
+}
+
+.btn-default {
+  color: var(--sfr-btn-default-text);
+  background-color: var(--sfr-btn-default-bg);
+  border-color: var(--sfr-border-color);
 }
 
 .btn {
