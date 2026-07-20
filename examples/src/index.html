@@ -1,33 +1,53 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-063933E3C2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-063933E3C2");
-    </script>
-    <title>Structured-Filter-React</title>
     <meta charset="utf-8" />
+    <title>Structured-Filter-React – React Component for Structured Search Filters</title>
+    <meta
+      name="description"
+      content="Structured-Filter-React is a React component for building structured search/filter queries — text, number, boolean, date, time, and list conditions like Firstname starts with 'A' and Birthday after 1/1/1990."
+    />
+    <meta
+      name="keywords"
+      content="react, component, structured filter, query builder, search filter, faceted search, filter editor, typescript"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Olivier Giulieri" />
+    <meta name="theme-color" content="#1970b7" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="canonical" href="https://evoluteur.github.io/structured-filter-react/" />
     <link
-      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%231970b7' d='M3 4h18l-7 9v6l-4 2v-8z'/></svg>"
+    />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Structured-Filter-React" />
+    <meta property="og:title" content="Structured-Filter-React – React Component for Structured Search Filters" />
+    <meta
+      property="og:description"
+      content="Build structured search conditions like Firstname starts with 'A' and Birthday after 1/1/1990 and Category in (Family, Friends)... A React component with full TypeScript support."
+    />
+    <meta property="og:url" content="https://evoluteur.github.io/structured-filter-react/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Structured-Filter-React" />
+    <meta
+      name="twitter:description"
+      content="A React component for building structured search/filter queries."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
       type="text/css"
     />
-    <meta name="description" content="Structured filter React component." />
-    <meta
-      name="keywords"
-      content="React component metadata advanced structured filter query builder editor search form"
-    />
+
     <!-- Inlined to avoid a flash of the wrong theme on load -->
     <script>
       (function () {
@@ -41,35 +61,260 @@
         }
       })();
     </script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-063933E3C2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-063933E3C2");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Structured-Filter-React",
+        "description": "A React component for building structured search/filter queries.",
+        "codeRepository": "https://github.com/evoluteur/structured-filter-react",
+        "programmingLanguage": "TypeScript",
+        "runtimePlatform": "React",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Olivier Giulieri",
+          "url": "https://evoluteur.github.io/"
+        }
+      }
+    </script>
   </head>
   <body>
-    <div class="github">
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=evoluteur&repo=structured-filter-react&type=star&count=true&size=small"
-        frameborder="0"
-        scrolling="0"
-        width="100px"
-        height="30px"
-      ></iframe>
+    <div class="header">
+      <h1>Structured-Filter-React</h1>
+      <div>
+        <div id="theme-toggle"></div>
+        <div class="github">
+          <iframe
+            title="Star structured-filter-react on GitHub"
+            src="https://ghbtns.com/github-btn.html?user=evoluteur&repo=structured-filter-react&type=star&count=true&size=small"
+            frameborder="0"
+            scrolling="0"
+            width="100px"
+            height="30px"
+          ></iframe>
+        </div>
+      </div>
     </div>
-    <div id="theme-toggle"></div>
-    <h1>Structured-Filter-React</h1>
+    <h2>React component for building structured search queries</h2>
     <p>
-      Structured-Filter-React is a React component for building structured
-      search queries. With it you can build structured search conditions like
-      Firstname starts with 'A' and Birthday after 1/1/1990 and State in (CA,
-      NY, FL)... It is a full jQuery UI widget, supporting various
-      configurations and themes.
+      With it you can build structured search conditions like Firstname starts
+      with 'A' and Birthday after 1/1/1990 and State in (CA, NY, FL)...
     </p>
 
     <noscript> You need to enable JavaScript to run this app. </noscript>
+
+    <h2>Demo</h2>
+
     <div id="root"></div>
+
+    <h2>Documentation</h2>
+
+    <div class="readme">
+      <nav class="readme-toc">
+        <ol>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#usage">Usage</a></li>
+          <li><a href="#model">Model</a></li>
+          <li><a href="#props">Props</a></li>
+          <li><a href="#development">Development</a></li>
+          <li><a href="#license">License</a></li>
+        </ol>
+      </nav>
+
+      <h3 id="installation">Installation</h3>
+      <pre><code>npm install structured-filter-react</code></pre>
+      <p>
+        <code>react</code> and <code>react-dom</code> (18 or 19) are peer
+        dependencies and must already be installed in your project.
+      </p>
+
+      <h3 id="usage">Usage</h3>
+      <pre><code>import Filter from "structured-filter-react";
+import "structured-filter-react/dist/index.css";
+
+const fields = [
+  { id: "lastname", type: "text", label: "Lastname" },
+  { id: "firstname", type: "text", label: "Firstname" },
+  { id: "active", type: "boolean", label: "Is active" },
+  { id: "age", type: "number", label: "Age" },
+  { id: "bday", type: "date", label: "Birthday" },
+  {
+    id: "category", type: "list", label: "Category",
+    list: [
+      { id: "1", text: "Family" },
+      { id: "2", text: "Friends" },
+      { id: "3", text: "Business" },
+      { id: "4", text: "Acquaintances" },
+      { id: "5", text: "Other" },
+    ],
+  },
+];
+
+const App = () => &lt;Filter fields={fields} /&gt;;</code></pre>
+      <p>
+        Check the
+        <a
+          href="https://github.com/evoluteur/structured-filter-react/tree/master/examples"
+          >demo</a
+        >
+        for a full example, including reading the current conditions back out
+        via <code>onChange</code>.
+      </p>
+
+      <h3 id="model">Model</h3>
+      <h4>Fields</h4>
+      <p>
+        Each field must have an <code>id</code>, a <code>type</code>, and a
+        <code>label</code>.
+      </p>
+      <ul>
+        <li><code>id</code> - unique identifier for the field.</li>
+        <li><code>label</code> - displayed field name.</li>
+        <li>
+          <code>type</code> - one of: <code>text</code>, <code>number</code>,
+          <code>boolean</code>, <code>date</code>, <code>time</code>,
+          <code>list</code>.
+        </li>
+      </ul>
+      <p>
+        Fields of type <code>list</code> must also have a
+        <code>list</code> property: an array of
+        <code>{ id, text }</code> options.
+      </p>
+
+      <h4>Conditions</h4>
+      <p>The filter's value is an array of conditions, each shaped as:</p>
+      <pre><code>{ field: string, operator: string, value: string | string[] | null }</code></pre>
+      <p>The available operators depend on the field's type:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Operators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>text</code></td>
+            <td>
+              equals (<code>eq</code>), not equal (<code>ne</code>), starts with
+              (<code>sw</code>), contains (<code>ct</code>), doesn't contain
+              (<code>nct</code>), finishes with (<code>fw</code>), is empty
+              (<code>null</code>), is not empty (<code>nn</code>)
+            </td>
+          </tr>
+          <tr>
+            <td><code>number</code></td>
+            <td>
+              = (<code>eq</code>), != (<code>ne</code>), &gt; (<code>gt</code>),
+              &lt; (<code>lt</code>), is empty (<code>null</code>), is not empty
+              (<code>nn</code>)
+            </td>
+          </tr>
+          <tr>
+            <td><code>boolean</code></td>
+            <td>
+              equals (<code>eq</code>), is empty (<code>null</code>), is not
+              empty (<code>nn</code>)
+            </td>
+          </tr>
+          <tr>
+            <td><code>date</code></td>
+            <td>
+              on/not on (<code>eq</code>/<code>ne</code>), after
+              (<code>gt</code>), before (<code>lt</code>), between/not between
+              (<code>bw</code>/<code>nbw</code>), is empty (<code>null</code>),
+              is not empty (<code>nn</code>)
+            </td>
+          </tr>
+          <tr>
+            <td><code>time</code></td>
+            <td>
+              at/not at (<code>eq</code>/<code>ne</code>), after
+              (<code>gt</code>), before (<code>lt</code>), between/not between
+              (<code>bw</code>/<code>nbw</code>), is empty (<code>null</code>),
+              is not empty (<code>nn</code>)
+            </td>
+          </tr>
+          <tr>
+            <td><code>list</code></td>
+            <td>
+              any of (<code>in</code>), is empty (<code>null</code>), is not
+              empty (<code>nn</code>)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <blockquote>
+        Note: <code>between</code>/<code>not between</code> are exposed in the
+        operator dropdown for <code>date</code>/<code>time</code> fields, but
+        the value editor currently only captures a single value — a second "to"
+        input isn't implemented yet.
+      </blockquote>
+
+      <h3 id="props">Props</h3>
+      <h4>&lt;Filter&gt;</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Prop</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>fields</code></td>
+            <td><code>Field[]</code></td>
+            <td>yes</td>
+            <td>The list of fields available to build conditions from.</td>
+          </tr>
+          <tr>
+            <td><code>onChange</code></td>
+            <td><code>(conditions: Condition[]) =&gt; void</code></td>
+            <td>no</td>
+            <td>Called whenever the list of conditions changes.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Types</h4>
+      <p>The package exports its TypeScript types alongside the component:</p>
+      <pre><code>import type { Field, FieldType, ListOption, Condition, ConditionValue } from "structured-filter-react";</code></pre>
+
+      <h3 id="development">Development</h3>
+      <pre><code>npm install       # install dependencies
+npm run demo      # run the demo app at http://localhost:3001
+npm run build     # build the library to dist/
+npm run typecheck # type-check the project</code></pre>
+
+      <h3 id="license">License</h3>
+      <p>Structured-Filter-React is released under the MIT license.</p>
+    </div>
 
     <p>
       <br /><br />
-      Code at
-      <a href="https://github.com/evoluteur/structured-filter-react">GitHub</a>
-      with MIT license - &#169; 2026
+      The code open-source at
+      <a href="https://github.com/evoluteur/structured-filter-react">GitHub</a>.
+    </p>
+    <p>
+      <br /><br />
+      &#169; 2026
       <a href="https://evoluteur.github.io/">Olivier Giulieri</a>
     </p>
   </body>

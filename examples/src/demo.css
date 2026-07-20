@@ -25,7 +25,7 @@
 }
 
 body {
-  font-family: "Roboto", arial, sans-serif;
+  font-family: "Lato", arial, sans-serif;
   margin: 20px;
   min-height: 500px;
   color: var(--demo-text);
@@ -49,15 +49,28 @@ a:hover {
   color: var(--demo-text);
 }
 
+.header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  > h1 {
+    flex-grow: 1;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
 .github {
-  float: right;
+  margin-top: 10px;
 }
 #theme-toggle {
   float: right;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 #root {
-  margin-top: 50px;
   clear: right;
 }
 .filter-json {
@@ -106,4 +119,53 @@ a:hover {
   height: 100%;
   margin: 0;
   cursor: pointer;
+}
+
+.readme {
+  max-width: 800px;
+}
+.readme h3 {
+  margin-top: 2em;
+}
+.readme h4 {
+  margin-top: 1.5em;
+}
+.readme-toc ol {
+  padding-left: 1.2em;
+}
+.readme pre {
+  padding: 12px 16px;
+  overflow-x: auto;
+  background-color: var(--demo-panel-bg);
+  border: 1px solid var(--demo-panel-border);
+  border-radius: 4px;
+}
+.readme code {
+  font-family: monospace;
+  font-size: 13px;
+}
+.readme p code,
+.readme li code,
+.readme td code {
+  padding: 0 4px;
+  background-color: var(--demo-panel-bg);
+  border-radius: 3px;
+}
+.readme table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.readme th,
+.readme td {
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 10px;
+  border: 1px solid var(--demo-panel-border);
+}
+.readme blockquote {
+  margin: 1em 0;
+  padding: 8px 16px;
+  border-left: 4px solid var(--demo-panel-border);
+  color: var(--demo-text);
+  opacity: 0.85;
 }
