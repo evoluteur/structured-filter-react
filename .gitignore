@@ -5,12 +5,6 @@ dist
 
 public/bundle.js
 
-*-nogit/
-*-nogit.*
-
-*.zip
-
-
 # Windows stuff
 Thumbs.db
 Desktop.ini
