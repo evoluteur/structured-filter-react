@@ -126,4 +126,6 @@ npm run typecheck # type-check the project
 
 Structured-Filter-React is released under the MIT license.
 
+Encourage this project by becoming a [sponsor](https://github.com/sponsors/evoluteur"></a>).
+
 Copyright (c) 2026 [Olivier Giulieri](https://evoluteur.github.io/).
