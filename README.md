@@ -6,8 +6,10 @@ With it you can build structured search conditions like *Firstname starts with '
 
 Check out the [Demo](https://evoluteur.github.io/structured-filter-react/).
 
+Light theme:
 ![Structured-Filter-React Light mode](https://raw.github.com/evoluteur/structured-filter-react/master/screenshots/sfr-light.webp)
 
+Dark theme:
 ![Structured-Filter-React Dark mode](https://raw.github.com/evoluteur/structured-filter-react/master/screenshots/sfr-dark.webp)
 
 This is the React re-write of [Structured-Filter](https://github.com/evoluteur/structured-filter), the original jQuery UI widget.

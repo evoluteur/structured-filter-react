@@ -1,7 +1,7 @@
 {
   "name": "structured-filter-react",
   "version": "0.2.0",
-  "description": "A React component for building structured search queries.",
+  "description": "React component for building structured search queries (written in TypeScript).",
   "type": "module",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/evoluteur/structured-filter-react",
+  "homepage": "https://evoluteur.github.io/structured-filter-react/",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
   "license": "MIT",
   "peerDependencies": {
