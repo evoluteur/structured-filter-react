@@ -4,7 +4,13 @@ Structured-Filter-React is a React component for building structured search/filt
 
 With it you can build structured search conditions like *Firstname starts with 'A'* and *Birthday after 1/1/1990* and *Category in (Family, Friends)*...
 
-This is the React implementation of [Structured-Filter](https://github.com/evoluteur/structured-filter), the original jQuery UI widget.
+Check out the [Demo](https://evoluteur.github.io/structured-filter-react/).
+
+![Structured-Filter-React Light mode](https://raw.github.com/evoluteur/structured-filter-react/master/screenshots/sfr-light.webp)
+
+![Structured-Filter-React Dark mode](https://raw.github.com/evoluteur/structured-filter-react/master/screenshots/sfr-dark.webp)
+
+This is the React re-write of [Structured-Filter](https://github.com/evoluteur/structured-filter), the original jQuery UI widget.
 
 ### Table of Contents
 1. [Installation](#installation)
@@ -14,7 +20,6 @@ This is the React implementation of [Structured-Filter](https://github.com/evolu
 5. [Development](#development)
 6. [License](#license)
 
-
 <a name="installation"></a>
 ## Installation
 
@@ -23,7 +28,6 @@ npm install structured-filter-react
 ```
 
 `react` and `react-dom` (18 or 19) are peer dependencies and must already be installed in your project.
-
 
 <a name="usage"></a>
 ## Usage
@@ -53,8 +57,7 @@ const fields = [
 const App = () => <Filter fields={fields} />;
 ```
 
-Check the [demo](examples) for a full example, including reading the current conditions back out via `onChange`.
-
+Check the [Demo](https://evoluteur.github.io/structured-filter-react/) for a full example, including reading the current conditions back out via `onChange`.
 
 <a name="model"></a>
 ## Model
@@ -90,7 +93,6 @@ The available operators depend on the field's type:
 
 > Note: `between`/`not between` are exposed in the operator dropdown for `date`/`time` fields, but the value editor currently only captures a single value — a second "to" input isn't implemented yet.
 
-
 <a name="props"></a>
 ## Props
 
@@ -109,7 +111,6 @@ The package exports its TypeScript types alongside the component:
 import type { Field, FieldType, ListOption, Condition, ConditionValue } from "structured-filter-react";
 ```
 
-
 <a name="development"></a>
 ## Development
 
@@ -119,7 +120,6 @@ npm run demo      # run the demo app at http://localhost:3001
 npm run build     # build the library to dist/
 npm run typecheck # type-check the project
 ```
-
 
 <a name="license"></a>
 ## License
