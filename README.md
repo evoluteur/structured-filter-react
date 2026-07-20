@@ -1,6 +1,6 @@
 # Structured-Filter-React
 
-Structured-Filter-React is a React component for building structured search/filter queries.
+Structured-Filter-React is a React component, written in TypeScript, for building structured search/filter queries.
 
 With it you can build structured search conditions like *Firstname starts with 'A'* and *Birthday after 1/1/1990* and *Category in (Family, Friends)*...
 
@@ -124,7 +124,7 @@ npm run typecheck # type-check the project
 <a name="license"></a>
 ## License
 
-Structured-Filter-React is released under the MIT license.
+Structured-Filter-React is released under the [MIT license](https://github.com/evoluteur/structured-filter-react/blob/master/LICENSE).
 
 Encourage this project by becoming a [sponsor](https://github.com/sponsors/evoluteur"></a>).
 
