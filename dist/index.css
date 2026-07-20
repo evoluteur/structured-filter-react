@@ -1,0 +1,125 @@
+/* src/FilterPill.css */
+.fltr-pills > div {
+  cursor: pointer;
+  display: inline-block;
+  border: solid 1px var(--sfr-border-color);
+  border-radius: 20px;
+  width: auto;
+  padding: 5px 10px;
+  margin: 5px;
+  color: var(--sfr-text-color);
+}
+.fltr-pills > div:hover {
+  background-color: var(--sfr-hover-bg);
+}
+.active-pill {
+  background-color: var(--sfr-active-bg);
+}
+.cond {
+  padding-left: 5px;
+}
+.fltr-cond {
+  margin-top: 10px;
+}
+.cond > div {
+  margin-right: 10px;
+}
+.pill-del {
+  cursor: pointer;
+  padding: 0 0 0 10px;
+}
+.pill-del:hover {
+  font-weight: bold;
+}
+.pill-text > span,
+.pill-del {
+  display: inline-block;
+  overflow: hidden;
+}
+.pill-value {
+  max-width: 170px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pill-field,
+.pill-value {
+  font-weight: bold;
+}
+.pill-operator {
+  margin: 0 0.4em;
+}
+
+/* src/Filter.css */
+:root {
+  --sfr-bg: #fff;
+  --sfr-text-color: #333;
+  --sfr-border-color: #ccc;
+  --sfr-hover-bg: #eee;
+  --sfr-active-bg: #eee;
+  --sfr-primary-bg: #337ab7;
+  --sfr-primary-border: #2e6da4;
+  --sfr-primary-text: #fff;
+  --sfr-btn-default-bg: #fff;
+  --sfr-btn-default-text: #333;
+}
+:root.theme-dark {
+  --sfr-bg: #2a2a2a;
+  --sfr-text-color: #eee;
+  --sfr-border-color: #555;
+  --sfr-hover-bg: #3a3a3a;
+  --sfr-active-bg: #3a3a3a;
+  --sfr-primary-bg: #2b6cb0;
+  --sfr-primary-border: #24557f;
+  --sfr-primary-text: #fff;
+  --sfr-btn-default-bg: #333;
+  --sfr-btn-default-text: #eee;
+}
+.evo-filter .form-control,
+.evo-filter .evol-fld > div {
+  display: inline-block;
+  width: auto;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+  padding: 6px 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--sfr-border-color);
+  border-radius: 4px;
+  background-color: var(--sfr-bg);
+  color: var(--sfr-text-color);
+}
+.btn-primary {
+  color: var(--sfr-primary-text);
+  background-color: var(--sfr-primary-bg);
+  border-color: var(--sfr-primary-border);
+}
+.btn-default {
+  color: var(--sfr-btn-default-text);
+  background-color: var(--sfr-btn-default-bg);
+  border-color: var(--sfr-border-color);
+}
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-width: 1px;
+  border-style: solid;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.cond-buttons,
+.cond-buttons > button,
+.lov-checkboxes > span,
+.lov-checkboxes input {
+  margin: 5px;
+}
+/*# sourceMappingURL=index.css.map */
