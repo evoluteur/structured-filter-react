@@ -3,8 +3,6 @@ node_modules
 dist
 *.tsbuildinfo
 
-public/bundle.js
-
 # Windows stuff
 Thumbs.db
 Desktop.ini
